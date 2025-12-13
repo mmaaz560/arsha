@@ -1,0 +1,56 @@
+:root{
+    --main-color:#4f6ca1 ;
+}
+.first-section{
+    background-color: var(--main-color) ;
+    
+}
+
+.animate{
+    animation: move 1s linear infinite alternate;
+}
+@keyframes move{
+    from{
+      transform:translateY(0);
+    }
+    to{
+      transform: translateY(-10px);
+    }
+}
+.text-blue{
+    color: var(--main-color);
+}
+.gray{
+    height: 3px;
+    width: 12%;
+    background-color:lightgray;
+    margin: auto;
+    position: relative;
+}
+.blue{
+    height: 4px;
+    width: 50%;
+    background-color: var(--bs-info);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.hea{
+    color: var(--main-color);
+}
+.sa{
+    color: #2364dd;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.bg-blue{
+    background-color: #052a70 ;
+}
+.a-card{
+    transition: all 0.5s;
+}
+.a-card:hover{
+  transform: translateY(-15px);
+}
