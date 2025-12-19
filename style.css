@@ -1,5 +1,5 @@
 :root{
-    --main-color:#4f6ca1 ;
+    --main-color:rgb(79, 108, 161) ;
 }
 .first-section{
     background-color: var(--main-color) ;
@@ -21,8 +21,8 @@
     color: var(--main-color);
 }
 .gray{
-    height: 3px;
-    width: 12%;
+    height: 2px;
+    width: 15%;
     background-color:lightgray;
     margin: auto;
     position: relative;
@@ -53,4 +53,66 @@
 }
 .a-card:hover{
   transform: translateY(-15px);
+}
+.wcard{
+    overflow: hidden;
+}
+.wcard img{
+    transition: all 0.7s;
+}
+.wcard:hover img{
+    transform: scale(1.2);
+}
+.wcontent{
+     transition: all 0.7s;
+}
+.wcard:hover .wcontent{
+   transform: translateY(-10px);
+}
+.imgcont{
+    background: linear-gradient(to right, rgba(55,81,126,0.5),rgba(55,81,126,0.8)),
+    url("https://bootstrapmade.com/content/demo/Arsha/assets/img/bg/bg-8.webp")fixed;
+}
+.sicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0e0e0;
+    border-radius:50% ;
+    width: 30px;
+    height: 30px;
+}
+.tcard{
+    transition: all 0.7s;
+}
+.trow:hover .tcard{
+    transform: translateY(-10px);
+}
+
+.ccard{
+    overflow: hidden;
+}
+.ccard img,.ccard h5,.ccard a{
+    transition: all 0.7s;
+}
+.ccard:hover img{
+    transform: scale(1.1);
+}
+.ccard:hover h5{
+    color : var(--bs-info)
+}
+
+.ccard:hover a{
+    color : var(--bs-info)!important;
+}
+
+.licon{
+    width: 40px;
+    height: 40px;
+    background:rgb(195, 216, 255) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 50%;
 }
